@@ -1,5 +1,15 @@
-import { Node, Rect, Txt, blur, makeScene2D } from "@motion-canvas/2d";
-import { createRef, delay, easeOutBack, easeInExpo, all, easeOutExpo, any, useDuration, waitFor, waitUntil } from "@motion-canvas/core";
+import { Node, Rect, Txt, TxtProps, makeScene2D } from "@motion-canvas/2d";
+import { createRef, delay, easeOutBack, easeInExpo, all, easeOutExpo, waitUntil } from "@motion-canvas/core";
+
+export const Letter: TxtProps = {
+  fontWeight: 800,
+  fontFamily: "Helvetica Neue",
+  strokeFirst: true,
+  lineWidth: 1,
+  lineJoin: "round",
+  shadowColor: "white",
+  shadowBlur: 20,
+};
 
 export default makeScene2D(function* (view) {
   const camera = createRef<Node>();
@@ -20,48 +30,30 @@ export default makeScene2D(function* (view) {
       <Node ref={camera} scale={7}>
         <Txt
           text={"H"}
-          fontWeight={800}
-          fontFamily={"Helvetica Neue"}
           ref={letterH}
           position={[-35, 30]}
           fill={transparent}
-          strokeFirst
-          lineWidth={1}
-          lineJoin={'round'}
           stroke={background_color}
           opacity={0}
-          shadowColor={"white"}
-          shadowBlur={20}
+          {...Letter}
         ></Txt>
         <Txt
           text={"O"}
-          fontWeight={800}
-          fontFamily={"Helvetica Neue"}
           ref={letterO}
           position={[0, -10]}
           fill={transparent}
-          strokeFirst
-          lineWidth={1}
-          lineJoin={'round'}
           stroke={background_color}
           opacity={0}
-          shadowColor={"white"}
-          shadowBlur={20}
+          {...Letter}
         ></Txt>
         <Txt
           text={"W"}
-          fontWeight={800}
-          fontFamily={"Helvetica Neue"}
           ref={letterW}
           position={[40, 10]}
           fill={transparent}
-          strokeFirst
-          lineWidth={1}
-          lineJoin={'round'}
           stroke={background_color}
           opacity={0}
-          shadowColor={"white"}
-          shadowBlur={20}
+          {...Letter}
         ></Txt>
       </Node>
     </>,

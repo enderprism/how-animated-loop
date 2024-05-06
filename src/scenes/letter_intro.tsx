@@ -63,7 +63,7 @@ export default makeScene2D(function* (view) {
   yield delay(
     timing,
     all(
-      camera().scale(7.0, timing, easeInExpo),
+      camera().scale(17.0, timing, easeInExpo),
       letterH().scale.y(3, timing, easeInExpo),
       letterW().scale.y(3, timing, easeInExpo),
     ),

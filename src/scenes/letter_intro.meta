@@ -1,0 +1,30 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "h_appear",
+      "targetTime": 0.21254237288135594
+    },
+    {
+      "name": "o_appear",
+      "targetTime": 0.464169576606533
+    },
+    {
+      "name": "w_appear",
+      "targetTime": 0.7102873986211597
+    },
+    {
+      "name": "h_fill",
+      "targetTime": 0.9832768361581931
+    },
+    {
+      "name": "o_fill",
+      "targetTime": 1.221581920903955
+    },
+    {
+      "name": "w_fill",
+      "targetTime": 1.4749152542372885
+    }
+  ],
+  "seed": 28175057
+}

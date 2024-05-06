@@ -30,7 +30,8 @@ export default makeScene2D(function* (view) {
           lineJoin={'round'}
           stroke={background_color}
           opacity={0}
-          shadowColor={"#000000"}
+          shadowColor={"white"}
+          shadowBlur={20}
         ></Txt>
         <Txt
           text={"O"}
@@ -44,6 +45,8 @@ export default makeScene2D(function* (view) {
           lineJoin={'round'}
           stroke={background_color}
           opacity={0}
+          shadowColor={"white"}
+          shadowBlur={20}
         ></Txt>
         <Txt
           text={"W"}
@@ -57,6 +60,8 @@ export default makeScene2D(function* (view) {
           lineJoin={'round'}
           stroke={background_color}
           opacity={0}
+          shadowColor={"white"}
+          shadowBlur={20}
         ></Txt>
       </Node>
     </>,
@@ -69,6 +74,7 @@ export default makeScene2D(function* (view) {
       all(
         letterH().position.y(3, timing, easeOutBack),
         letterH().opacity(1, 0),
+        letterH().shadowBlur(0, 0.5),
       )
     ),
     delay(
@@ -76,6 +82,7 @@ export default makeScene2D(function* (view) {
       all(
         letterO().position.y(3, timing, easeOutBack),
         letterO().opacity(1, 0),
+        letterO().shadowBlur(0, 0.5),
       )
     ),
     delay(
@@ -83,10 +90,14 @@ export default makeScene2D(function* (view) {
       all(
         letterW().position.y(3, timing, easeOutBack),
         letterW().opacity(1, 0),
+        letterW().shadowBlur(0, 0.5),
         backdrop().fill(background_color, color_shift_duration),
         letterH().stroke(foreground_color, color_shift_duration),
         letterO().stroke(foreground_color, color_shift_duration),
         letterW().stroke(foreground_color, color_shift_duration),
+        letterH().shadowColor(foreground_color, color_shift_duration),
+        letterO().shadowColor(foreground_color, color_shift_duration),
+        letterW().shadowColor(foreground_color, color_shift_duration),
       )),
     delay(
       useDuration('h_fill'),

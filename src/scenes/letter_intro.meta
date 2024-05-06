@@ -3,27 +3,31 @@
   "timeEvents": [
     {
       "name": "h_appear",
-      "targetTime": 0.21254237288135594
+      "targetTime": 0.20416666666666672
     },
     {
       "name": "o_appear",
-      "targetTime": 0.464169576606533
+      "targetTime": 0.44592391304347834
     },
     {
       "name": "w_appear",
-      "targetTime": 0.7102873986211597
+      "targetTime": 0.717300724637681
     },
     {
       "name": "h_fill",
-      "targetTime": 0.9832768361581931
+      "targetTime": 0.9642007492016713
     },
     {
       "name": "o_fill",
-      "targetTime": 1.221581920903955
+      "targetTime": 1.2025058339474333
     },
     {
       "name": "w_fill",
-      "targetTime": 1.4749152542372885
+      "targetTime": 1.455839167280767
+    },
+    {
+      "name": "letter_intro_finish",
+      "targetTime": 1.714317428150332
     }
   ],
   "seed": 28175057

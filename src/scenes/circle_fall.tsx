@@ -15,13 +15,13 @@ export default makeScene2D(function* (view) {
   view.add(
     <>
       <Rect ref={backdrop} width={"100%"} height={"100%"} fill={"black"} />
-      <Circle ref={circle} width={200} height={200} fill={'white'} scale={0.8} {...shadow} />
+      <Circle ref={circle} width={200} height={200} fill={'white'} scale={1.1} {...shadow} />
       <Circle ref={ring} width={500} height={500} lineWidth={100} lineJoin={"round"} stroke={"white"} {...shadow} />
     </>
   );
 
   yield* all(
-    circle().scale(1.2, 0.25 * speed_scale, easeOutExpo),
+    circle().scale(1.5, 0.25 * speed_scale, easeOutExpo),
     delay(0.25 * speed_scale, circle().scale(0.7, 0.25 * speed_scale, easeInExpo)),
     ring().scale(2.0, 0.5 * speed_scale, easeOutExpo),
     ring().lineWidth(0.0, 0.5 * speed_scale, easeOutExpo),

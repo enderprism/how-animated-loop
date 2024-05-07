@@ -1,0 +1,26 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "ringGrowEnd",
+      "targetTime": 0.7546376811594205
+    },
+    {
+      "name": "ray1start",
+      "targetTime": 0.2900702646318289
+    },
+    {
+      "name": "ray2start",
+      "targetTime": 0.5243577860652296
+    },
+    {
+      "name": "ray3start",
+      "targetTime": 0.8815038803857221
+    },
+    {
+      "name": "raysEnd",
+      "targetTime": 1.0062610465575588
+    }
+  ],
+  "seed": 2096732665
+}

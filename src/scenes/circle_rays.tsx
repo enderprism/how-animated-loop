@@ -34,6 +34,7 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield all(
+		circle().scale(0.7, 0.5, easeOutExpo),
 		ring().scale(7, ringDuration, easeOutExpo),
 		ring().lineWidth(1, ringDuration, easeOutQuart),
 		ring().opacity(0.5, 0.5),

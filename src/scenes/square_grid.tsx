@@ -18,7 +18,7 @@ export default makeScene2D(function* (view) {
 					position={() => grid().spacing().div([2, 2])}
 					stroke={"white"}
 					opacity={0.5}
-					lineWidth={5}
+					lineWidth={7}
 					compositeOperation={"source-in"}
 				/>
 			</Node>

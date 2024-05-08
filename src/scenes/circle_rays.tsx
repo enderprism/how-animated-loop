@@ -33,6 +33,7 @@ export default makeScene2D(function* (view) {
 		</>
 	);
 
+
 	yield all(
 		circle().scale(0.7, 0.5, easeOutExpo),
 		ring().scale(7, ringDuration, easeOutExpo),
@@ -57,7 +58,7 @@ export default makeScene2D(function* (view) {
 		circle_parent().position.y(0, 0.1, easeOutSine),
 		ring().scale(0.0, 0.3, easeInOutQuart),
 		ring().opacity(0.0, 0.3, easeInOutQuart),
-		rays.at(1).rotation(-180, 0.1, easeOutSine),
+		rays.at(1).rotation(-180, 0.3, easeOutExpo),
 	);
 	yield all(
 		circle_parent().position.y(backdrop().height() / 4, 0.2, easeInOutQuart),
